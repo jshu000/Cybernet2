@@ -50,7 +50,7 @@ class PaintView(context: Context, attrs: AttributeSet?) : View(context, attrs) {
             else -> return false
         }
 
-        postInvalidate()  // Redraw the view
+        postInvalidate()
         return true
     }
 
@@ -75,4 +75,12 @@ class PaintView(context: Context, attrs: AttributeSet?) : View(context, attrs) {
         currentBrushColor = android.graphics.Color.RED
         currentStrokeWidth = 8f
     }
+
+    fun clear() {
+        pathList.clear()
+        colorList.clear()
+        strokeWidthList.clear()
+        invalidate()
+    }
+
 }

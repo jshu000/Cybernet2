@@ -33,5 +33,8 @@ class MainActivity : AppCompatActivity() {
         findViewById<Button>(R.id.brush_button).setOnClickListener {
             paintView.deactivateEraser()
         }
+        findViewById<Button>(R.id.clear_button).setOnClickListener {
+            paintView.clear()
+        }
     }
 }

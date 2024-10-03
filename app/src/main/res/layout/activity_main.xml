@@ -29,6 +29,14 @@
             android:layout_weight="1"
             android:textColor="@color/black"
             android:text="Brush" />
+
+        <Button
+            android:id="@+id/clear_button"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:textColor="@color/black"
+            android:text="Clear" />
     </LinearLayout>
 
 </LinearLayout>
